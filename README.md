@@ -10,7 +10,7 @@ This script takes as input a discretized matrix representing the trajectory of t
 The code is optimized for Python versions 3.6 or higher
 
 ##Input
-The script can take in input more files at the time. Create a folder called "files" to fill with all the text files that you want to analyze.
+The script can take in input more files at the time. Create a folder called ``files`` to fill with all the text files that you want to analyze.
 
 The input files must be generated as follows:
 
