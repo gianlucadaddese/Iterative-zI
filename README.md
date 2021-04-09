@@ -1,7 +1,7 @@
 # Iterative-zI
 
 
-##Overview
+## Overview
 
 TO-DO METTERE RIFERIMENTO A ARTICOLO/I
 
@@ -9,7 +9,7 @@ This script takes as input a discretized matrix representing the trajectory of t
 
 The code is optimized for Python versions 3.6 or higher
 
-##Input
+## Input
 The script can take in input more files at the time. Create a folder called ``files`` to fill with all the text files that you want to analyze.
 
 The input files must be generated as follows:
@@ -20,7 +20,7 @@ The input files must be generated as follows:
 
 see ``example.txt`` as an example
 
-##Preprocessing
+## Preprocessing
 
 Before starting with the main script it is required a preprocessing step.
 ```
@@ -32,7 +32,7 @@ After this first step is possible to proceed with the execution of the main scri
 
 "python3 run.py"
 
-##Parameter
+## Parameter
 The program supports the following options
 
 	``-g --gruop`` takes as input an integer which is used to set the maximum size of the groups to be analyzed. The default value is 3.
@@ -45,7 +45,7 @@ Example:
 ```
 Once the run is complete, a folder will be created for each file in input, containing the script output.
 
-##Output
+## Output
 the output is defined as follows:
 
 	- Directory ``results``: Each iteration are stored here indentified with the iteration number.  inside there are 2 text file related to that specific iteration:
