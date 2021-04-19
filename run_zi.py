@@ -2,6 +2,8 @@ import os
 import sys,getopt
 import shutil
 import time
+from calcolate_zI import *
+from merger import *
 
 short_options = "g:z:"
 long_options = ["group=","zi="]
@@ -41,10 +43,12 @@ for file in all_file:
 		while(exit <= 1):
 			num+=1
 			os.system("mkdir {}".format(num))
-			os.system("python3 calcolate_zI.py {}".format(max_dimension))
+			calcolate_zi(max_dimension)
+			#os.system("python3 calcolate_zI.py {}".format(max_dimension))
 			shutil.copy("file.txt", "{}/".format(num))
 			print(exit)
-			exit = os.system("python3 merger.py {}".format(max_zI))
+			exit = merge(max_zI)
+			#exit = os.system("python3 merger.py {}".format(max_zI))
 			shutil.move("grind.txt", "{}/".format(num))
 			shutil.move("{}/".format(num), "results")
 			print("-----------------")
