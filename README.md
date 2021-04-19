@@ -9,14 +9,14 @@ The method involves two basic steps: (i) the detection of the candidate RSs base
 
 The reference papers in which the details of the method are presented are:
 
-•	Villani, M., Sani, L., Pecori, R., Amoretti, M., Roli, A., Mordonini, M., Serra R., Cagnoni, S. An iterative information-theoretic approach to the detection of structures in complex systems. Complexity 2018
-•	D’Addese G., Sani L., La Rocca L., Serra R., Villani M. Asymptotic Information-Theoretic Detection of Dynamical Organization in Complex Systems Entropy 2021, 23(4), 398
+	•Villani, M., Sani, L., Pecori, R., Amoretti, M., Roli, A., Mordonini, M., Serra R., Cagnoni, S. An iterative information-theoretic approach to the detection of structures in complex systems. Complexity 2018
+	•D’Addese G., Sani L., La Rocca L., Serra R., Villani M. Asymptotic Information-Theoretic Detection of Dynamical Organization in Complex Systems Entropy 2021, 23(4), 398
 
 The script takes as input:
-•	a discretized matrix representing the data set - a matrix composed of N variables (the columns) and M observations (the rows) 
--and give as output:
-•	a file containing the succession of groupings, up to the definitive solution (the document’s last line)
-•	a list of folders showing the data set used in each iteration (file.txt) and the corresponding evaluation of the subsets taken into consideration (grind.txt)
+	•a discretized matrix representing the data set - a matrix composed of N variables (the columns) and M observations (the rows) 
+and give as output:
+	•a file containing the succession of groupings, up to the definitive solution (the document’s last line)
+	•a list of folders showing the data set used in each iteration (file.txt) and the corresponding evaluation of the subsets taken into consideration (grind.txt)
 
 
 The code is optimized for Python versions 3.6 or higher
