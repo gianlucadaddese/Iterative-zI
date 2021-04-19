@@ -3,9 +3,21 @@
 
 ## Overview
 
-TO-DO METTERE RIFERIMENTO A ARTICOLO/I
+The identification of emergent structures in complex dynamical systems is a very difficult task with broad applications. In particular, the formation of intermediate-level dynamical structures could allow a high-level description of the organization of the system itself, and thus to its better understanding.
+We here present a method based on the Relevance Index method aimed at revealing these dynamical structures (Relevant Sets, or RSs in the following).
+The method involves two basic steps: (i) the detection of the candidate RSs based on the computation of the Relevance Index, and (ii) the iterated application of a process composed by a sieving action followed by the merger of the grouped variables and a new candidate RSs detection, till reaching the final grouping (composed by the “real” RSs).
 
-This script takes as input a discretized matrix representing the trajectory of the data, and give as output, the relevant sets found in the sistem.
+The reference papers in which the details of the method are presented are:
+
+•	Villani, M., Sani, L., Pecori, R., Amoretti, M., Roli, A., Mordonini, M., Serra R., Cagnoni, S. An iterative information-theoretic approach to the detection of structures in complex systems. Complexity 2018
+•	D’Addese G., Sani L., La Rocca L., Serra R., Villani M. Asymptotic Information-Theoretic Detection of Dynamical Organization in Complex Systems Entropy 2021, 23(4), 398
+
+The script takes as input:
+•	a discretized matrix representing the data set - a matrix composed of N variables (the columns) and M observations (the rows) 
+-and give as output:
+•	a file containing the succession of groupings, up to the definitive solution (the document’s last line)
+•	a list of folders showing the data set used in each iteration (file.txt) and the corresponding evaluation of the subsets taken into consideration (grind.txt)
+
 
 The code is optimized for Python versions 3.6 or higher
 
