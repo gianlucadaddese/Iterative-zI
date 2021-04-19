@@ -14,12 +14,12 @@ The reference papers in which the details of the method are presented are:
 
 The script takes as input:
 
-	a discretized matrix representing the data set - a matrix composed of N variables (the columns) and M observations (the rows) 
+	- discretized matrix representing the data set, composed of N variables (the columns) and M observations (the rows) 
 	
 and give as output:
 
-	a file containing the succession of groupings, up to the definitive solution (the document’s last line)
-	a list of folders showing the data set used in each iteration (file.txt) and the corresponding evaluation of the subsets taken into consideration (grind.txt)
+	- file containing the succession of groupings, up to the definitive solution (the document’s last line)
+	- list of folders showing the data set used in each iteration (file.txt) and the corresponding evaluation of the subsets taken into consideration (grind.txt)
 
 
 The code is optimized for Python versions 3.6 or higher
