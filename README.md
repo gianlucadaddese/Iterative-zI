@@ -9,8 +9,9 @@ The method involves two basic steps: (i) the detection of the candidate RSs base
 
 The reference papers in which the details of the method are presented are:
 
-	Villani, M., Sani, L., Pecori, R., Amoretti, M., Roli, A., Mordonini, M., Serra R., Cagnoni, S. An iterative information-theoretic approach to the detection of structures in complex systems. Complexity 2018
-	D’Addese G., Sani L., La Rocca L., Serra R., Villani M. Asymptotic Information-Theoretic Detection of Dynamical Organization in Complex Systems Entropy 2021, 23(4), 398
+Villani, M., Sani, L., Pecori, R., Amoretti, M., Roli, A., Mordonini, M., Serra R., Cagnoni, S. An iterative information-theoretic approach to the detection of structures in complex systems. Complexity 2018
+
+D’Addese G., Sani L., La Rocca L., Serra R., Villani M. Asymptotic Information-Theoretic Detection of Dynamical Organization in Complex Systems Entropy 2021, 23(4), 398
 
 The script takes as input:
 
