@@ -26,7 +26,7 @@ and give as output:
 The code is optimized for Python versions 3.6 or higher
 
 ## Input
-The script can take in input more files at the time. Create a folder called ``files`` to fill with all the text files that you want to analyze.
+The script can take in input more files at a time. Create a folder called ``files`` to fill with all the text files that you want to analyze.
 
 The input files must be generated as follows:
 
@@ -42,18 +42,18 @@ Before starting with the main script it is required a preprocessing step.
 ```
 "python3 deleter.py"
 ```
-This script searches and eliminates all the columns of the input matrix where value remains constant for the whole column. This type of elements does not bring information to the system and therefore will not join any of the relevant sets. IMPORTANT NOTE: this script will overwrite the starting file in the directory files.
+This script searches and eliminates all the columns of the input matrix where value remains constant for the whole column. This type of element does not carry information and could be included in any of the groups: it is therefore better that it be eliminated. IMPORTANT NOTE: this script will overwrite the starting file in the directory files.
 
-After this first step is possible to proceed with the execution of the main script. from command line: 
+After this first step is possible to proceed with the execution of the main script. Type on the command line:
 
 "python3 run.py"
 
 ## Parameter
 The program supports the following options
 
-	``-g --gruop`` takes as input an integer which is used to set the maximum size of the groups to be analyzed. The default value is 3.
+	``-g --gruop`` takes as input an integer which is used to set the maximum size of the subsets to be analyzed. The default value is 3.
 
-	``-z --zi`` takes in a float that is used to set the zI treshold used for arrest the iterarive merge. The default value is 3.
+	``-z --zi`` takes in a float that is used to set the zI threshold  used to stop  the iterative merge. The default value is 3.
 
 Example:
 ```
@@ -64,11 +64,11 @@ Once the run is complete, a folder will be created for each file in input, conta
 ## Output
 the output is defined as follows:
 
-	- Directory ``results``: Each iteration are stored here indentified with the iteration number.  inside there are 2 text file related to that specific iteration:
+	- Directory ``results``: Each iteration is stored in a dedicated folder, identified by the iteration number. Inside the folder there are two files:
 
 		• ``file.txt``: the state of the system before the merge of the current iteration.
 
-		• ``grind.txt``: a list of all the groups analyzed and the value of the zI calculated on them. the order of the gruop is defined by zI, sorted in descending order. This type of information is useful for taking a closer look at how the system is organized. However it turns out, most of the time, this file is really large and being able to build it for each iteration proves to be high disk-space consuming. this problem was circumvented by printing only the first 1000 most relevant groups. This value can be increased or decreased at will in the ``cacolate_zI.py`` file by changing the value of the variable at the beginning of the file ``num_line_to_print``.
+		• ``grind.txt``: a list of all the groups analyzed and the value of the zI calculated on them. the order of the gruop is defined by zI, sorted in descending order. This type of information is useful for taking a closer look at how the system is organized. However, in many cases it could happen that the file is very large: in this case, creating it at each iteration can involve a high consumption of disk space. This problem can be circumvented by printing only the first 1000 most relevant groups. This value can be increased or decreased at will in the ``cacolate_zI.py`` file by changing the value of the variable at the beginning of the file ``num_line_to_print``.
 
-	- ``sequence.txt``: the sequence of the relevant sets merging line by line. The last element of each row is the join carried out in that iteration followed by the zI value assigned to it. the last line of this file represents the last merge that was possible using the threshold provided in input. This line then represents the relevant sets of the system. In each line the relevant sets are separated by tabs. Within each relevant set the elements that compose it are separated by "_"
+	- ``sequence.txt``: the sequence of RSs groupings at each iteration. The last element of each row is the join carried out in that iteration, followed by the zI value assigned to it. the last line of this file represents the last merge that was possible using the threshold provided in input. This line then represents the relevant sets of the system. In each line the relevant sets are separated by tabs. The elements that form each RS are separated by the character "_"
 
